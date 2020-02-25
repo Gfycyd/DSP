@@ -20,7 +20,7 @@ sin_sig = sin_ampl*sin(samples);
 f = figure(1); // set fig number
 clear //clear figure
 
-plot(recorded_data - sin_sig', '--o');// plot data with o samples
+plot(recorded_data - sin_sig');// plot data with o samples
 gca.data_bounds = [0, -1;fs,1]; //x_limit 0..100 y_limit -2..2
 xlabel('Samples');
 ylabel('Amplitude');
